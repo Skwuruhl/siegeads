@@ -1,5 +1,5 @@
 # siegeads
 
-Calculates an XFactorAiming value and then two corresponding ADS sensitivity values to use depending on if your current weapon has an ACOG sight or not.
+Calculates an XFactorAiming value and then two corresponding ADS sensitivity values based on your FOV and desired vertical match distance. Set the two sensitivity values with the in-game slider depending on if you're playing with an ACOG or not.
 
 XFactorAiming value is set in Documents\\My Games\\Rainbow Six - Siege\\<random shit>\\GameSettings.ini under \[INPUT\]
