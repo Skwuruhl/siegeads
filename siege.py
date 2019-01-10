@@ -2,14 +2,15 @@ import math
 from fractions import Fraction
 
 fov = float(input("FOV="))
+mode = input("Mode ('zoom' or 'monitor distance')=")
 coef = float(input("Coefficient="))
 
-if coef > 0:
+if mode == 'zoom':
+    acog = math.tan(math.radians(fov)/2*0.35)/math.tan(math.radians(fov)/2)/0.35 * coef
+    iron = math.tan(math.radians(fov)/2*0.9)/math.tan(math.radians(fov)/2)/.6 * coef
+else:
     acog = math.atan(coef*math.tan(math.radians(fov)/2*0.35))/math.atan(coef*math.tan(math.radians(fov)/2))/0.35
     iron = math.atan(coef*math.tan(math.radians(fov)/2*0.9))/math.atan(coef*math.tan(math.radians(fov)/2))/0.6
-else:
-    acog = math.tan(math.radians(fov)/2*0.35)/math.tan(math.radians(fov)/2)/0.35
-    iron = math.tan(math.radians(fov)/2*0.9)/math.tan(math.radians(fov)/2)/.6
 
 approximations = str(Fraction(acog/iron).limit_denominator(100)).split('/')
 
