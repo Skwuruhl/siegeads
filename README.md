@@ -9,11 +9,13 @@ XFactorAiming value is set in Documents\\My Games\\Rainbow Six - Siege\\\<random
 As an example with my settings:
 
     FOV=70.53
-    Coefficient=0
-    
+    Mode ('zoom' or 'monitor distance')=zoom
+    Coefficient=1
+
     ACOG ADS Sensitivity: 57
     Ironsight ADS Sensitivity: 94
     XFactorAiming=0.015511
+    Glaz Scope Sensitivity: 57
     
-After setting XFactorAiming in my config all I need to do in-game is set 57 ADS sensitivity when using an ACOG and 94 when using anything else.
+After setting XFactorAiming in my config all I need to do in-game is set 57 ADS sensitivity when using an ACOG (or glaz scope) and 94 when using anything else.
 
