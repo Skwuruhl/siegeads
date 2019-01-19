@@ -2,10 +2,10 @@ import math
 from fractions import Fraction
 
 fov = float(input("FOV="))
-mode = input("Mode ('zoom' or 'monitor distance')=")
+mode = int(input("Mode:\n1 for zoom ratio\n2 for monitor distance\n\t"))
 coef = float(input("Coefficient="))
 
-if mode == 'zoom':
+if mode == 1:
     acog = math.tan(math.radians(fov)/2*0.35)/math.tan(math.radians(fov)/2)/0.35 * coef
     iron = math.tan(math.radians(fov)/2*0.9)/math.tan(math.radians(fov)/2)/.6 * coef
     glaz = math.tan(math.radians(fov)/2*0.3)/math.tan(math.radians(fov)/2)/0.3 * coef

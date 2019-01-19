@@ -4,14 +4,17 @@ Since Rainbow Six Siege lacks two sensitivity sliders for the different zoom lev
 
 Zoom scales based on focal length and zoom ratio. Monitor distance is a bit more complicated.
 
-Coefficient's function depends on the mode. In zoom it's a multiplier such that 1.3 is just a 1.3x multiplier to sensitivity. Monitor distance is vertical match distance where 100% is entered as 1.0. Don't use a value <= 0.
+Coefficient's function depends on the mode. In zoom ratio it's a multiplier such that 1.3 is just a 1.3x multiplier to sensitivity. Monitor distance is vertical match distance where 100% is entered as 1.0. Don't use a value <= 0.
 
 XFactorAiming value is set in Documents\\My Games\\Rainbow Six - Siege\\\<random shit\>\\GameSettings.ini under \[INPUT\]
 
 As an example with my settings:
 
-    FOV=70.53
-    Mode ('zoom' or 'monitor distance')=zoom
+    FOV=70.5328
+    Mode:
+    1 for zoom ratio
+    2 for monitor distance
+        1
     Coefficient=1
 
     ACOG ADS Sensitivity: 57
